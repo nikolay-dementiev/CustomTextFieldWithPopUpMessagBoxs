@@ -14,7 +14,7 @@ class CustomTextField2: UITextField {
 //    @IBInspectable
     var image: UIImage? = nil
 
-    @IBInspectable
+//    @IBInspectable
     var imageQuestionShowed: Bool = false {
         didSet {
             hideOrShowImageQuestion()
@@ -61,7 +61,9 @@ class CustomTextField2: UITextField {
 
             addSubview(notNullImageView)
             sendSubview(toBack: notNullImageView)
+
         }
+
 
         leftView = imgView
 
@@ -131,11 +133,11 @@ class CustomTextField2: UITextField {
 ////        return textRect;
 //    }
 
-//    override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
-//        var textRect:CGRect  = super.rightViewRect(forBounds: bounds)
-//        textRect.origin.x += 10;
-//        return textRect;
-//    }
+    override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+        var textRect:CGRect  = super.leftViewRect(forBounds: bounds)
+        textRect.origin.x += imgLeftInset;
+        return textRect;
+    }
 
 
 
