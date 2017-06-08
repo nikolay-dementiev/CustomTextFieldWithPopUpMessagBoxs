@@ -12,6 +12,9 @@
 		E7352C4D1EE94F980095264E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7352C4B1EE94F980095264E /* Main.storyboard */; };
 		E7352C4F1EE94F980095264E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7352C4E1EE94F980095264E /* Assets.xcassets */; };
 		E7352C521EE94F980095264E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7352C501EE94F980095264E /* LaunchScreen.storyboard */; };
+		E7352C5A1EE94FEF0095264E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C591EE94FEF0095264E /* CustomTextField.swift */; };
+		E7352C5C1EE952E90095264E /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5B1EE952E90095264E /* UIColorHelper.swift */; };
+		E7352C5E1EE958F50095264E /* CustomTextField2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5D1EE958F50095264E /* CustomTextField2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		E7352C4E1EE94F980095264E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7352C511EE94F980095264E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7352C531EE94F980095264E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7352C591EE94FEF0095264E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E7352C5B1EE952E90095264E /* UIColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
+		E7352C5D1EE958F50095264E /* CustomTextField2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				E7352C4E1EE94F980095264E /* Assets.xcassets */,
 				E7352C501EE94F980095264E /* LaunchScreen.storyboard */,
 				E7352C531EE94F980095264E /* Info.plist */,
+				E7352C591EE94FEF0095264E /* CustomTextField.swift */,
+				E7352C5D1EE958F50095264E /* CustomTextField2.swift */,
+				E7352C5B1EE952E90095264E /* UIColorHelper.swift */,
 			);
 			path = CustomTextFieldEmoChat;
 			sourceTree = "<group>";
@@ -139,6 +148,9 @@
 			files = (
 				E7352C4A1EE94F980095264E /* ViewController.swift in Sources */,
 				E7352C481EE94F980095264E /* AppDelegate.swift in Sources */,
+				E7352C5E1EE958F50095264E /* CustomTextField2.swift in Sources */,
+				E7352C5A1EE94FEF0095264E /* CustomTextField.swift in Sources */,
+				E7352C5C1EE952E90095264E /* UIColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

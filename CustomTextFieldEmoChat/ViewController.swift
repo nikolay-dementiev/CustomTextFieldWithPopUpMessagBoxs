@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var text1: CustomTextField!
+    @IBOutlet weak var tex2: CustomTextField2!
+    @IBAction func button2Pressed(_ sender: UIButton) {
+        tex2?.imageQuestionShowed = false
+    }
+    @IBAction func button3Showed(_ sender: UIButton) {
+        tex2?.imageQuestionShowed = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
