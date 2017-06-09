@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet weak var text1: CustomTextField!
     @IBOutlet weak var tex2: CustomTextField2!

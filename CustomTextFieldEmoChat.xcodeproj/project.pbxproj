@@ -15,6 +15,7 @@
 		E7352C5A1EE94FEF0095264E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C591EE94FEF0095264E /* CustomTextField.swift */; };
 		E7352C5C1EE952E90095264E /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5B1EE952E90095264E /* UIColorHelper.swift */; };
 		E7352C5E1EE958F50095264E /* CustomTextField2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5D1EE958F50095264E /* CustomTextField2.swift */; };
+		E7352C601EEAAC250095264E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5F1EEAAC250095264E /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E7352C591EE94FEF0095264E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E7352C5B1EE952E90095264E /* UIColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		E7352C5D1EE958F50095264E /* CustomTextField2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField2.swift; sourceTree = "<group>"; };
+		E7352C5F1EEAAC250095264E /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E7352C591EE94FEF0095264E /* CustomTextField.swift */,
 				E7352C5D1EE958F50095264E /* CustomTextField2.swift */,
 				E7352C5B1EE952E90095264E /* UIColorHelper.swift */,
+				E7352C5F1EEAAC250095264E /* PopUpViewController.swift */,
 			);
 			path = CustomTextFieldEmoChat;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				E7352C481EE94F980095264E /* AppDelegate.swift in Sources */,
 				E7352C5E1EE958F50095264E /* CustomTextField2.swift in Sources */,
 				E7352C5A1EE94FEF0095264E /* CustomTextField.swift in Sources */,
+				E7352C601EEAAC250095264E /* PopUpViewController.swift in Sources */,
 				E7352C5C1EE952E90095264E /* UIColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

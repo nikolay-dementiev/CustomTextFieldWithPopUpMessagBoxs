@@ -74,5 +74,29 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="45b-tM-5uu">
+            <objects>
+                <viewController storyboardIdentifier="popoverViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AMD-31-02Q" customClass="PopUpViewController" customModule="CustomTextFieldEmoChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vC2-Nx-fIY"/>
+                        <viewControllerLayoutGuide type="bottom" id="w32-vE-doN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qdf-Bz-0ZD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.66798857869999995" green="0.66798857869999995" blue="0.66798857869999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="100" height="667"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFw-bu-f1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="124"/>
+        </scene>
     </scenes>
 </document>

@@ -100,6 +100,39 @@ class CustomTextField2: UITextField {
     }
 
     func openEmoji() {
+//        let popoverViewController = storyboard.instantiateViewControllerWithIdentifier("popoverViewController")
+        //
+        //            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
+        //            popoverViewController.popoverPresentationController!.delegate = self
+
+//        find vc where text field setted
+
+
+
+        if let vcPopOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popoverViewController") as? PopUpViewController {
+//            viewController.newsObj = newsObj
+//            if let navigator = navigationController {
+//                navigator.pushViewController(viewController, animated: true)
+//            }
+
+//            present(viewController, animated: true, completion: nil)
+
+//            vcPopOver.modalPresentationStyle = UIModalPresentationStyle.popover
+//            vcPopOver.popoverPresentationController!.delegate = self
+
+//            let svc = StartViewController()
+//            vcPopOver.modalTransitionStyle = .crossDissolve
+//            presentViewController(vcPopOver, animated: true, completion: nil)
+
+            if let notNullVCOwner:UIViewController = firstAvailableUIViewController() {
+
+                vcPopOver.modalPresentationStyle = UIModalPresentationStyle.popover
+                vcPopOver.popoverPresentationController!.delegate = notNullVCOwner as? UIPopoverPresentationControllerDelegate
+
+                notNullVCOwner.present(vcPopOver, animated: true, completion: nil)
+            }
+
+        }
 
     }
 
