@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CustomTextField2.commonInit() -&gt; ():CustomTextField2.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "imgTopInset">
+            </PersistentString>
+            <PersistentString
+               value = "notNullImageView.bounds.origin.x">
+            </PersistentString>
+            <PersistentString
+               value = "notNullImageView.frame.origin.x">
+            </PersistentString>
+            <PersistentString
+               value = "weight">
+            </PersistentString>
+            <PersistentString
+               value = "imgLeftInset">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomTextField2.openPopOverVC() -&gt; ():CustomTextField2.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "vcPopOver.popoverPresentationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomTextField2.openEmoji() -&gt; ():CustomTextField2.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "vcPopOver">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
