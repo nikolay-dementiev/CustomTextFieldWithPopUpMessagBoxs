@@ -8,16 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class ViewController: UIViewController {
 
-    @IBOutlet weak var text1: CustomTextField!
-    @IBOutlet weak var tex2: CustomTextField2!
+    @IBOutlet weak var tex2: CustomTextFieldWithPopOverInfoBox!
+
     @IBAction func button2Pressed(_ sender: UIButton) {
         tex2?.imageQuestionShowed = false
     }
     @IBAction func button3Showed(_ sender: UIButton) {
         tex2?.imageQuestionShowed = true
     }
+
+    @IBAction func showpopUpQuestionBox(_ sender: UIButton) {
+        tex2?.openPopOverVC()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,7 +32,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
 
+extension ViewController: UIPopoverPresentationControllerDelegate {
 
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
 }
 
