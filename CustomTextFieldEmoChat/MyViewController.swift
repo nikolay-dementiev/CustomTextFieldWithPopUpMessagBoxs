@@ -30,6 +30,8 @@ class MyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        tex2?.textInfoForQuestionLabel = "bla bla bla21"
     }
 
     override func didReceiveMemoryWarning() {

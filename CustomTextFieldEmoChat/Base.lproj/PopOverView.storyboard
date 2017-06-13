@@ -22,13 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-ng-0XO" customClass="CustomTextFieldWithPopOverInfoBox" customModule="CustomTextFieldEmoChat" customModuleProvider="target">
-                                <rect key="frame" x="34" y="148" width="308" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqT-Wd-Gf8">
                                 <rect key="frame" x="115" y="237" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,8 +54,19 @@
                                     <action selector="showPopUpWithSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oL-ZB-8DM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-ng-0XO" customClass="CustomTextFieldWithPopOverInfoBox" customModule="CustomTextFieldEmoChat" customModuleProvider="target">
+                                <rect key="frame" x="33" y="78" width="308" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cDd-ng-0XO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="Bm3-aE-aEg"/>
+                            <constraint firstItem="cDd-ng-0XO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="Oq3-Kc-LnQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cDd-ng-0XO" secondAttribute="trailing" constant="18" id="ZhR-iI-AJE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tex2" destination="cDd-ng-0XO" id="XLT-ck-f2U"/>

@@ -27,10 +27,6 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
         }
     }
 
-//    var imgLeftInset: CGFloat = = 5.0
-//    var imgTopInset: CGFloat  = = 3.0
-//    var imgBottomInset: CGFloat = = 3.0
-
     var imgLeftInset: CGFloat = 0
     var imgTopInset: CGFloat = 0
     var imgBottomInset: CGFloat = 0
@@ -105,7 +101,7 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
     //MARK: popOverVindow
 
     func openPopOverVC() {
-        if  let vcPopOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popoverViewController") as? PopUpViewController {
+        if  let vcPopOver = UIStoryboard(name: "PopOverView", bundle: nil).instantiateViewController(withIdentifier: "popoverViewController") as? PopUpViewController {
 
             if let notNullVCOwner:UIViewController = firstAvailableUIViewController(),
                 notNullVCOwner is MyViewController {
@@ -116,7 +112,7 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
                 //CGSize(width: 50, height: 50)
 
 
-                vcPopOver.infoLabelText = "bla bla bla"
+                vcPopOver.infoLabelText = textInfoForQuestionLabel
 
                 vcPopOver.view.backgroundColor = dataContainer.popOverVCBackgroundColor
 
@@ -127,10 +123,9 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
 
                     popoverPresentationController.sourceView = notNullBtnQuestion
                     popoverPresentationController.sourceRect = notNullBtnQuestion.bounds
-                    popoverPresentationController.permittedArrowDirections = .any
+                    popoverPresentationController.permittedArrowDirections = .down//.any
                     popoverPresentationController.delegate = notNullVCOwner as? UIPopoverPresentationControllerDelegate
                     popoverPresentationController.backgroundColor = dataContainer.popOverCOntrollerBackgroundColor
-
 
                 }
 
