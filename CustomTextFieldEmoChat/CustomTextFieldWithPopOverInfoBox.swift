@@ -9,11 +9,16 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class CustomTextFieldWithPopOverInfoBox: UITextField {
+
+    private lazy var dataContainer = {
+        return HelperForCustomTextFieldWithPopOverInfoBox()
+    }()
 
     var image: UIImage?
     var btnQuestion:UIButton?
+    var textInfoForQuestionLabel: String?
 
     //    @IBInspectable
     var imageQuestionShowed: Bool = false {
@@ -22,9 +27,13 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
         }
     }
 
-    @IBInspectable var imgLeftInset: CGFloat = 5.0
-    @IBInspectable var imgTopInset: CGFloat = 3.0
-    @IBInspectable var imgBottomInset: CGFloat = 3.0
+//    var imgLeftInset: CGFloat = = 5.0
+//    var imgTopInset: CGFloat  = = 3.0
+//    var imgBottomInset: CGFloat = = 3.0
+
+    var imgLeftInset: CGFloat = 0
+    var imgTopInset: CGFloat = 0
+    var imgBottomInset: CGFloat = 0
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,7 +48,12 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
     //MARK: question mark button
     private func commonInit() {
         clipsToBounds = true
-        image = UIImage(named: "question")
+
+        imgLeftInset = dataContainer.imgLeftInset
+        imgTopInset = dataContainer.imgTopInset
+        imgBottomInset = dataContainer.imgBottomInset
+
+        image = dataContainer.questionImage//UIImage(named: "question")
 
         let weight = self.bounds.height - (imgTopInset + imgBottomInset)
 
@@ -83,7 +97,7 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
 
         var textRect:CGRect  = super.leftViewRect(forBounds: bounds)
-        textRect.origin.x += imgLeftInset;
+        textRect.origin.x += imgLeftInset
 
         return textRect;
     }
@@ -98,7 +112,13 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
 
                 // Present the view controller using the popover style.
                 vcPopOver.modalPresentationStyle = .popover
-                vcPopOver.preferredContentSize = CGSize(width: 50, height: 50)
+                vcPopOver.preferredContentSize = self.bounds.size
+                //CGSize(width: 50, height: 50)
+
+
+                vcPopOver.infoLabelText = "bla bla bla"
+
+                vcPopOver.view.backgroundColor = dataContainer.popOverVCBackgroundColor
 
 //                notNullVCOwner.present(vcPopOver, animated: true, completion: nil)
 
@@ -109,12 +129,29 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
                     popoverPresentationController.sourceRect = notNullBtnQuestion.bounds
                     popoverPresentationController.permittedArrowDirections = .any
                     popoverPresentationController.delegate = notNullVCOwner as? UIPopoverPresentationControllerDelegate
+                    popoverPresentationController.backgroundColor = dataContainer.popOverCOntrollerBackgroundColor
+
+
                 }
 
                 notNullVCOwner.present(vcPopOver, animated: true, completion: nil)
             }
         }
     }
+
+}
+
+fileprivate struct HelperForCustomTextFieldWithPopOverInfoBox {
+    //http://colorhunt.co/c/71302
+    let popOverVCBackgroundColor:UIColor = UIColor(red: 255,green: 211,blue: 182)
+    let popOverCOntrollerBackgroundColor:UIColor = UIColor(red: 255,green: 170,blue: 165)
+    let textColorPopOver:UIColor = UIColor.black
+
+    let imgLeftInset: CGFloat = 5.0
+    let imgTopInset: CGFloat = 3.0
+    let imgBottomInset: CGFloat = 3.0
+
+    let questionImage = UIImage(named: "question")
 
 }
 

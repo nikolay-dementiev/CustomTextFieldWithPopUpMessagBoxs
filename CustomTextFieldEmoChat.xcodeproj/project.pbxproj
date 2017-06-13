@@ -15,6 +15,7 @@
 		E7352C5E1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5D1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift */; };
 		E7352C601EEAAC250095264E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5F1EEAAC250095264E /* PopUpViewController.swift */; };
 		E7B2365A1EED83DF00E9A7F8 /* popOverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B236591EED83DF00E9A7F8 /* popOverHelper.swift */; };
+		E7B2365C1EF008ED00E9A7F8 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B2365B1EF008ED00E9A7F8 /* UIColorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E7352C5D1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithPopOverInfoBox.swift; sourceTree = "<group>"; };
 		E7352C5F1EEAAC250095264E /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		E7B236591EED83DF00E9A7F8 /* popOverHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popOverHelper.swift; sourceTree = "<group>"; };
+		E7B2365B1EF008ED00E9A7F8 /* UIColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E7352C4E1EE94F980095264E /* Assets.xcassets */,
 				E7352C501EE94F980095264E /* LaunchScreen.storyboard */,
 				E7352C531EE94F980095264E /* Info.plist */,
+				E7B2365B1EF008ED00E9A7F8 /* UIColorHelper.swift */,
 				E7352C5D1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift */,
 				E7352C5F1EEAAC250095264E /* PopUpViewController.swift */,
 				E7B236591EED83DF00E9A7F8 /* popOverHelper.swift */,
@@ -149,6 +152,7 @@
 				E7352C4A1EE94F980095264E /* MyViewController.swift in Sources */,
 				E7352C481EE94F980095264E /* AppDelegate.swift in Sources */,
 				E7B2365A1EED83DF00E9A7F8 /* popOverHelper.swift in Sources */,
+				E7B2365C1EF008ED00E9A7F8 /* UIColorHelper.swift in Sources */,
 				E7352C5E1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift in Sources */,
 				E7352C601EEAAC250095264E /* PopUpViewController.swift in Sources */,
 			);

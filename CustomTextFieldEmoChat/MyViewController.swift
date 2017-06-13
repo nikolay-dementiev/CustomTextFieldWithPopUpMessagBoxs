@@ -24,7 +24,7 @@ class MyViewController: UIViewController {
     }
 
     @IBAction func showPopUpWithSegue(_ sender: UIButton) {
-        performSegue(withIdentifier: "popoverSegue", sender: nil)
+//        performSegue(withIdentifier: "popoverSegue", sender: nil)
     }
 
     override func viewDidLoad() {

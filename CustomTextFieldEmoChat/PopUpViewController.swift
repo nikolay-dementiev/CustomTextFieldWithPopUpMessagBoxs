@@ -10,17 +10,24 @@ import UIKit
 
 class PopUpViewController: UIViewController {
 
+    @IBOutlet weak var infoLabel: UILabel!
+
+    var infoLabelText:String?
+
     var popoverPresentController: UIPopoverPresentationController? {
         return popoverPresentationController
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupInitData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupInitData() {
+        if let notNullInfoLabelText = infoLabelText {
+            infoLabel.text = notNullInfoLabelText
+        }
     }
 
 }
