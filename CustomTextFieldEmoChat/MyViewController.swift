@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MyViewController: UIViewController {
 
     @IBOutlet weak var tex2: CustomTextFieldWithPopOverInfoBox!
 
@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         tex2?.openPopOverVC()
     }
 
+    @IBAction func showPopUpWithSegue(_ sender: UIButton) {
+        performSegue(withIdentifier: "popoverSegue", sender: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,9 +36,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "popoverSegue" {
+            let popoverViewController = segue.destination as! PopUpViewController
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
+            popoverViewController.popoverPresentationController!.delegate = self
+        }
+    }
 }
 
-extension ViewController: UIPopoverPresentationControllerDelegate {
+extension MyViewController: UIPopoverPresentationControllerDelegate {
 
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none

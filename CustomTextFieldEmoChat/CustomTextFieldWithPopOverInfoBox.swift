@@ -94,13 +94,13 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
         if  let vcPopOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popoverViewController") as? PopUpViewController {
 
             if let notNullVCOwner:UIViewController = firstAvailableUIViewController(),
-                notNullVCOwner is ViewController {
+                notNullVCOwner is MyViewController {
 
                 // Present the view controller using the popover style.
                 vcPopOver.modalPresentationStyle = .popover
                 vcPopOver.preferredContentSize = CGSize(width: 50, height: 50)
 
-                notNullVCOwner.present(vcPopOver, animated: true, completion: nil)
+//                notNullVCOwner.present(vcPopOver, animated: true, completion: nil)
 
                 if let notNullBtnQuestion = btnQuestion,
                     let popoverPresentationController = vcPopOver.popoverPresentController {
@@ -111,7 +111,7 @@ class CustomTextFieldWithPopOverInfoBox: UITextField {
                     popoverPresentationController.delegate = notNullVCOwner as? UIPopoverPresentationControllerDelegate
                 }
 
-//                notNullVCOwner.present(vcPopOver, animated: true, completion: nil)
+                notNullVCOwner.present(vcPopOver, animated: true, completion: nil)
             }
         }
     }

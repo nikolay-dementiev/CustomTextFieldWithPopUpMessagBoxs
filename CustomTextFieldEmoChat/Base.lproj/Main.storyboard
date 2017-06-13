@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTextFieldEmoChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MyViewController" customModule="CustomTextFieldEmoChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -52,11 +52,22 @@
                                     <action selector="showpopUpQuestionBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzv-Fi-f3K"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5C-tr-6sF">
+                                <rect key="frame" x="86" y="405" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="test popUp action with segue"/>
+                                <connections>
+                                    <action selector="showPopUpWithSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oL-ZB-8DM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="tex2" destination="cDd-ng-0XO" id="XLT-ck-f2U"/>
+                        <segue destination="AMD-31-02Q" kind="popoverPresentation" identifier="popoverSegue" popoverAnchorView="k5C-tr-6sF" id="b89-RR-6u9">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,25 +83,28 @@
                         <viewControllerLayoutGuide type="bottom" id="w32-vE-doN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qdf-Bz-0ZD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-k7-0d1">
-                                <rect key="frame" x="166" y="8" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-k7-0d1">
+                                <rect key="frame" x="79" y="14.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.66798857869999995" green="0.66798857869999995" blue="0.66798857869999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oy9-k7-0d1" firstAttribute="centerY" secondItem="Qdf-Bz-0ZD" secondAttribute="centerY" id="KT4-Qy-Lz1"/>
+                            <constraint firstItem="oy9-k7-0d1" firstAttribute="centerX" secondItem="Qdf-Bz-0ZD" secondAttribute="centerX" id="drk-Oo-ole"/>
+                        </constraints>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="100" height="667"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="100" height="50"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
+                    <size key="freeformSize" width="200" height="50"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFw-bu-f1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
