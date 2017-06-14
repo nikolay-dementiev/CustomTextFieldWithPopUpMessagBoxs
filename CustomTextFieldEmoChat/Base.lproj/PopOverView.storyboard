@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
-        <!--Pop Up View Controller-->
+        <!--View Controller-->
         <scene sceneID="45b-tM-5uu">
             <objects>
-                <viewController storyboardIdentifier="popoverViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AMD-31-02Q" customClass="PopUpViewController" customModule="CustomTextFieldEmoChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popoverViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AMD-31-02Q" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vC2-Nx-fIY"/>
                         <viewControllerLayoutGuide type="bottom" id="w32-vE-doN"/>
@@ -88,7 +88,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-k7-0d1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-k7-0d1">
                                 <rect key="frame" x="21" y="14.5" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -108,9 +108,6 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="200" height="50"/>
-                    <connections>
-                        <outlet property="infoLabel" destination="oy9-k7-0d1" id="vml-nI-veg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFw-bu-f1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -3,6 +3,46 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "CustomTextField2.openPopOverVC() -&gt; ():CustomTextField2.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "vcPopOver.popoverPresentationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PopOverViewController.viewDidLoad() -&gt; ():PopOverViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "infoLabelText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomTextField2.openEmoji() -&gt; ():CustomTextField2.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "vcPopOver">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomTextFieldWithPopOverInfoBox.openPopOverVC() -&gt; ():CustomTextFieldWithPopOverInfoBox.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textInfoForQuestionLabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyViewController.showpopUpQuestionBox(UIButton) -&gt; ():MyViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tex2?.textInfoForQuestionLabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "CustomTextField2.commonInit() -&gt; ():CustomTextField2.swift">
          <PersistentStrings>
             <PersistentString
@@ -23,18 +63,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "CustomTextField2.openPopOverVC() -&gt; ():CustomTextField2.swift">
+         contextName = "CustomTextFieldWithPopOverInfoBox.commonInit() -&gt; ():CustomTextFieldWithPopOverInfoBox.swift">
          <PersistentStrings>
             <PersistentString
-               value = "vcPopOver.popoverPresentationController">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "CustomTextField2.openEmoji() -&gt; ():CustomTextField2.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "vcPopOver">
+               value = "popOverVC">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -8,11 +8,15 @@
 
 import UIKit
 
-class PopUpViewController: UIViewController {
+class PopOverViewController: UIViewController {
 
     @IBOutlet weak var infoLabel: UILabel!
 
-    var infoLabelText:String?
+    var infoLabelText:String? {
+        didSet {
+            setupInitData()
+        }
+    }
 
     var popoverPresentController: UIPopoverPresentationController? {
         return popoverPresentationController
@@ -20,8 +24,6 @@ class PopUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupInitData()
     }
 
     func setupInitData() {

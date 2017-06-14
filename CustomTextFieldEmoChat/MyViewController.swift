@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyViewController: UIViewController {
+class MyViewController: EmoChatUIViewController {
 
     @IBOutlet weak var tex2: CustomTextFieldWithPopOverInfoBox!
 
@@ -40,18 +40,18 @@ class MyViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "popoverSegue" {
-            let popoverViewController = segue.destination as! PopUpViewController
-            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
-            popoverViewController.popoverPresentationController!.delegate = self
-        }
+//        if segue.identifier == "popoverSegue" {
+//            let popoverViewController = segue.destination as! PopUpViewController
+//            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
+//            popoverViewController.popoverPresentationController!.delegate = self
+//        }
     }
 }
 
-extension MyViewController: UIPopoverPresentationControllerDelegate {
-
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        return .none
-    }
-}
+//extension MyViewController: UIPopoverPresentationControllerDelegate {
+//
+//    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+//        return .none
+//    }
+//}
 

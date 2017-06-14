@@ -12,10 +12,12 @@
 		E7352C4D1EE94F980095264E /* PopOverView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7352C4B1EE94F980095264E /* PopOverView.storyboard */; };
 		E7352C4F1EE94F980095264E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7352C4E1EE94F980095264E /* Assets.xcassets */; };
 		E7352C521EE94F980095264E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7352C501EE94F980095264E /* LaunchScreen.storyboard */; };
-		E7352C5E1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5D1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift */; };
-		E7352C601EEAAC250095264E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7352C5F1EEAAC250095264E /* PopUpViewController.swift */; };
-		E7B2365A1EED83DF00E9A7F8 /* popOverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B236591EED83DF00E9A7F8 /* popOverHelper.swift */; };
-		E7B2365C1EF008ED00E9A7F8 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B2365B1EF008ED00E9A7F8 /* UIColorHelper.swift */; };
+		E7B236771EF139D800E9A7F8 /* CustomTextFieldWithPopOverInfoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B236711EF139D800E9A7F8 /* CustomTextFieldWithPopOverInfoBox.swift */; };
+		E7B236781EF139D800E9A7F8 /* EmoChatUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B236721EF139D800E9A7F8 /* EmoChatUIViewController.swift */; };
+		E7B236791EF139D800E9A7F8 /* PopOverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B236731EF139D800E9A7F8 /* PopOverHelper.swift */; };
+		E7B2367A1EF139D800E9A7F8 /* PopOverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B236741EF139D800E9A7F8 /* PopOverVC.xib */; };
+		E7B2367B1EF139D800E9A7F8 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B236751EF139D800E9A7F8 /* PopOverViewController.swift */; };
+		E7B2367C1EF139D800E9A7F8 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B236761EF139D800E9A7F8 /* UIColorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +28,12 @@
 		E7352C4E1EE94F980095264E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7352C511EE94F980095264E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7352C531EE94F980095264E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7352C5D1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithPopOverInfoBox.swift; sourceTree = "<group>"; };
-		E7352C5F1EEAAC250095264E /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		E7B236591EED83DF00E9A7F8 /* popOverHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popOverHelper.swift; sourceTree = "<group>"; };
-		E7B2365B1EF008ED00E9A7F8 /* UIColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
+		E7B236711EF139D800E9A7F8 /* CustomTextFieldWithPopOverInfoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithPopOverInfoBox.swift; sourceTree = "<group>"; };
+		E7B236721EF139D800E9A7F8 /* EmoChatUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoChatUIViewController.swift; sourceTree = "<group>"; };
+		E7B236731EF139D800E9A7F8 /* PopOverHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverHelper.swift; sourceTree = "<group>"; };
+		E7B236741EF139D800E9A7F8 /* PopOverVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopOverVC.xib; sourceTree = "<group>"; };
+		E7B236751EF139D800E9A7F8 /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		E7B236761EF139D800E9A7F8 /* UIColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +66,28 @@
 		E7352C461EE94F980095264E /* CustomTextFieldEmoChat */ = {
 			isa = PBXGroup;
 			children = (
+				E7B236701EF139D800E9A7F8 /* EmoChatTextField */,
 				E7352C471EE94F980095264E /* AppDelegate.swift */,
 				E7352C491EE94F980095264E /* MyViewController.swift */,
 				E7352C4B1EE94F980095264E /* PopOverView.storyboard */,
 				E7352C4E1EE94F980095264E /* Assets.xcassets */,
 				E7352C501EE94F980095264E /* LaunchScreen.storyboard */,
 				E7352C531EE94F980095264E /* Info.plist */,
-				E7B2365B1EF008ED00E9A7F8 /* UIColorHelper.swift */,
-				E7352C5D1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift */,
-				E7352C5F1EEAAC250095264E /* PopUpViewController.swift */,
-				E7B236591EED83DF00E9A7F8 /* popOverHelper.swift */,
 			);
 			path = CustomTextFieldEmoChat;
+			sourceTree = "<group>";
+		};
+		E7B236701EF139D800E9A7F8 /* EmoChatTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E7B236721EF139D800E9A7F8 /* EmoChatUIViewController.swift */,
+				E7B236711EF139D800E9A7F8 /* CustomTextFieldWithPopOverInfoBox.swift */,
+				E7B236731EF139D800E9A7F8 /* PopOverHelper.swift */,
+				E7B236741EF139D800E9A7F8 /* PopOverVC.xib */,
+				E7B236751EF139D800E9A7F8 /* PopOverViewController.swift */,
+				E7B236761EF139D800E9A7F8 /* UIColorHelper.swift */,
+			);
+			path = EmoChatTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,7 @@
 			files = (
 				E7352C521EE94F980095264E /* LaunchScreen.storyboard in Resources */,
 				E7352C4F1EE94F980095264E /* Assets.xcassets in Resources */,
+				E7B2367A1EF139D800E9A7F8 /* PopOverVC.xib in Resources */,
 				E7352C4D1EE94F980095264E /* PopOverView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,11 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7352C4A1EE94F980095264E /* MyViewController.swift in Sources */,
+				E7B236791EF139D800E9A7F8 /* PopOverHelper.swift in Sources */,
+				E7B2367B1EF139D800E9A7F8 /* PopOverViewController.swift in Sources */,
+				E7B236771EF139D800E9A7F8 /* CustomTextFieldWithPopOverInfoBox.swift in Sources */,
+				E7B236781EF139D800E9A7F8 /* EmoChatUIViewController.swift in Sources */,
 				E7352C481EE94F980095264E /* AppDelegate.swift in Sources */,
-				E7B2365A1EED83DF00E9A7F8 /* popOverHelper.swift in Sources */,
-				E7B2365C1EF008ED00E9A7F8 /* UIColorHelper.swift in Sources */,
-				E7352C5E1EE958F50095264E /* CustomTextFieldWithPopOverInfoBox.swift in Sources */,
-				E7352C601EEAAC250095264E /* PopUpViewController.swift in Sources */,
+				E7B2367C1EF139D800E9A7F8 /* UIColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
